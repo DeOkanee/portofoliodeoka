@@ -51,7 +51,7 @@ body {
 }
 @media (max-width:991px) {
   body {
-    background-image: url('../img/919.jpg');
+    background-image: url('/assets/img/919.jpg');
   }
 
   .profile img {
