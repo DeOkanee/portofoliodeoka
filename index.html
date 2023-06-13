@@ -55,25 +55,6 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
-    <!--audio-->
-    <script>
-      function showNotification() {
-        if ("Notification" in window) {
-          Notification.requestPermission().then(function (permission) {
-            if (permission === "granted") {
-              const notification = new Notification("Play Musik", {
-                body: "Sedang memutar musik...",
-                icon: "path-to-notification-icon.png", // Ganti dengan path gambar ikon notifikasi Anda
-              });
-
-              setTimeout(function () {
-                notification.close();
-              }, 5000);
-            }
-          });
-        }
-      }
-    </script>
     <!--animasi scroll-->
     <link
       rel="stylesheet"
@@ -83,53 +64,82 @@
     <title>Profile De Oka</title>
   </head>
 
-  <body class="bg-light">
+  <body>
+    <!--audio berjalan di latar belakang-->
+    <audio
+      id="backgroundAudio"
+      src="https://k.top4top.io/m_27079rsl61.mp3"
+      autoplay
+      loop
+    ></audio>
+
+    <button id="toggleButton" class="musik" onclick="toggleBackgroundAudio()">
+      Stop 🎵
+    </button>
+
+    <script>
+      var backgroundAudio = document.getElementById("backgroundAudio");
+      var toggleButton = document.getElementById("toggleButton");
+
+      function toggleBackgroundAudio() {
+        if (backgroundAudio.paused) {
+          backgroundAudio.play();
+          toggleButton.classList.remove("stop");
+        } else {
+          backgroundAudio.pause();
+          toggleButton.classList.add("stop");
+        }
+      }
+    </script>
+    <!--audio berjalan di latar belakang-->
     <main class="m-auto pt-5 pb-1">
       <section class="container profile text-center">
         <img src="assets/img/prof.png" />
         <h3>DE&nbsp;OKA</h3>
-        <div class="blog">
-          <p>
-            Haii 👋🏻 ...<br />
-            Selamat datang di profile De oka, yang merupakan tempat berkreasi
-            dan ekspresi dari pemikiran dan imajinasi saya sendiri. Ini adalah
-            sebuah web profile yang dibuat secara otodidak, di mana saya
-            memiliki keinginan untuk membuat dan menciptakan sesuatu yang baru.
-            <br />
-            <br />
-            o(〃＾▽＾〃)o
-          </p>
+        <h2>Haiii 🖐🏻</h2>
+        <p id="teks-me" onclick="tampilkanTeksLain()">About Me<br /></p>
+        <p id="teks-blog">
+          Selamat datang di profile De oka, yang merupakan tempat berkreasi dan
+          ekspresi dari pemikiran dan imajinasi saya sendiri. Ini adalah sebuah
+          web profile yang dibuat secara otodidak, di mana saya memiliki
+          keinginan untuk membuat dan menciptakan sesuatu yang baru.
+        </p>
+      </section>
+      <!-- Our Script -->
+      <script src="assets/css/text.js"></script>
+      <!--silde foto-->
+
+      <!-- sosial -->
+      <section class="fh5co-social">
+        <div class="site-container">
+          <div class="social">
+            <div class="social-icons">
+              <a
+                class="sosial"
+                href="https://www.facebook.com/oka.kembarisna.9"
+              >
+                <i id="facebook" class="fab fa-facebook fa-2x"></i>
+              </a>
+              <a class="sosial" href="https://wa.me/6285738187967">
+                <i id="whatsapp" class="fab fa-whatsapp fa-2x"></i>
+              </a>
+              <a
+                class="sosial"
+                href="https://instagram.com/de_0ka?igshid=NTc4MTIwNjQ2YQ=="
+              >
+                <i id="instagram" class="fab fa-instagram fa-2x"></i>
+              </a>
+              <a class="sosial" href="https://vm.tiktok.com/ZSLR4EKHE/">
+                <i id="tiktok" class="fab fa-tiktok fa-2x"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="container text-center">
-        <!--AUDIO-->
-        <audio id="audio" loop>
-          <source
-            src="https://k.top4top.io/m_27079rsl61.mp3"
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+      <script src="/assets/css/scrol.js"></script>
 
-        <button class="musik" id="playButton" onclick="showNotification()">
-          Musick
-        </button>
-      </section>
+      <!-- sosial -->
 
-      <script>
-        const audio = document.querySelector("#audio");
-        const playButton = document.querySelector("#playButton");
-
-        playButton.addEventListener("click", function () {
-          if (audio.paused) {
-            audio.play();
-            playButton.textContent = "🎵";
-          } else {
-            audio.pause();
-            playButton.textContent = "❌";
-          }
-        });
-      </script>
       <!--slide foto-->
       <div class="klik">
         <button id="showButton" class="mygalery">My Galery</button>
@@ -245,37 +255,7 @@
           <p>LAGI PROSES</p>
         </div>
       </section>
-      <!-- sosial -->
-      <section class="fh5co-social">
-        <div class="site-container">
-          <div class="social">
-            <h5>Follow Me</h5>
-            <div class="social-icons">
-              <a
-                class="sosial"
-                href="https://www.facebook.com/oka.kembarisna.9"
-              >
-                <i id="facebook" class="fab fa-facebook fa-2x"></i>
-              </a>
-              <a class="sosial" href="https://wa.me/6285738187967">
-                <i id="whatsapp" class="fab fa-whatsapp fa-2x"></i>
-              </a>
-              <a
-                class="sosial"
-                href="https://instagram.com/de_0ka?igshid=NTc4MTIwNjQ2YQ=="
-              >
-                <i id="instagram" class="fab fa-instagram fa-2x"></i>
-              </a>
-              <a class="sosial" href="https://vm.tiktok.com/ZSLR4EKHE/">
-                <i id="tiktok" class="fab fa-tiktok fa-2x"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <script src="/assets/css/scrol.js"></script>
 
-      <!-- sosial -->
       <footer>
         <div class="bawah">
           <p align="center">
