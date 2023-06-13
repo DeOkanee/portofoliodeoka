@@ -104,9 +104,9 @@ body {
 
 @media (max-width: 991px) {
   body {
-    background-image: url("/assets/img/919.jpg");
-    background-size: cover;
+    background: linear-gradient(135deg, #000cbb, #096ab9, #8708b9, #7db9e8);
   }
+
 
   .profile img {
     width: 27%;
