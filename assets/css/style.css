@@ -20,6 +20,7 @@ body {
   text-align: center;
   object-fit: cover;
   transition: box-shadow 0.3s;
+  margin-top: 7%;
 }
 
 .profile img:hover {
@@ -48,7 +49,6 @@ body {
   height: auto;
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
-
   margin-top: 3%;
   margin-left: 40%;
   margin-right: 40%;
@@ -56,6 +56,7 @@ body {
   padding-bottom: 1%;
 }
 #teks-blog{
+  display: none;
   color: white;
   text-align: center;
   font-size: 1.7rem;
@@ -70,11 +71,12 @@ body {
 .musik{
   font-size: 1.0rem;
   background-color: rgb(255, 255, 255);
-  margin-top: 10px;
+  margin-top: 18%;
   border-radius: 2em;
   height: 35px;
   width: 7%;
   margin-left: 10px;
+  margin-top: 10%;
 }
 .musik:hover{
   background-color: rgb(255, 0, 0);
@@ -91,6 +93,7 @@ body {
   .profile img {
     width: 27%;
     height: auto;
+    margin-top: 18%;
   }
 
   .profile img:hover {
@@ -102,7 +105,7 @@ body {
     padding-left: 5px;
     font-size: 1.0rem;
     background-color: rgb(255, 255, 255);
-    margin-top: 10px;
+    margin-top: 18%;
     border-radius: 1rem;
     height: 35px;
     width: 20%;
@@ -155,16 +158,16 @@ input {
   width: 60px;
 }
 
+
+/*Geser*/
+
 .title h2 {
-  margin-top: 0;
+  margin-top: 10%;
   text-align: center;
   color: #fff;
   font-family: cursive;
   font-size: 30px;
 }
-
-/*Geser*/
-
 a {
   text-decoration: none;
 }
@@ -337,8 +340,10 @@ a {
 footer:after{
   top: 5%;
   position: absolute;
+
 }
 .bawah p {
+  margin-top: 2%;
   margin-bottom: 0%;
   color: #fff;
   font-size: 17px;
