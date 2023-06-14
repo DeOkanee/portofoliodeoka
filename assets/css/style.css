@@ -360,20 +360,22 @@ a {
 }
 
 /* copright */
-footer:after {
-  top: 5%;
-  position: absolute;
+footer {
+  background-color: #292929;
+  position: relative;
+  bottom: -1rem;
+  width: auto;
+  margin-top: 1em;
+  text-align: center;
+  padding: 8px;
 }
 
 .bawah p {
-  margin-top: 2%;
-  margin-bottom: 0%;
+  padding-top: 4px;
   color: #fff;
   font-size: 17px;
-  background-color: #1a1a1a;
-  padding: 10px;
 }
 
-.bawah a {
-  color: aqua;
+.bawah {
+  text-align: center;
 }
