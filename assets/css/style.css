@@ -70,10 +70,6 @@ body {
   padding-bottom: 1%;
 }
 
-#teks-me:hover {
-  background: linear-gradient(135deg, rgb(17, 6, 179), rgb(6, 203, 230));
-}
-
 #teks-blog {
   display: none;
   color: white;
@@ -87,7 +83,7 @@ body {
 }
 
 
-.hidden {
+.hiddenoka {
   display: none;
 }
 
@@ -125,13 +121,13 @@ body {
 
 
   .profile img {
-    width: 27%;
+    width: 29%;
     height: auto;
     margin-top: 18%;
   }
 
   .profile img:hover {
-    width: 29%;
+    width: 31%;
     height: auto;
     image-rendering: smooth;
   }

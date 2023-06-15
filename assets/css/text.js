@@ -6,5 +6,3 @@ function tampilkanTeksLain() {
     teksLain.style.display = "none";
   }
 }
-
-
