@@ -70,6 +70,18 @@ body {
   padding-bottom: 1%;
 }
 
+#teks-me:hover {
+  background: linear-gradient(135deg, rgb(17, 6, 179), rgb(6, 203, 230));
+}
+
+.color-change {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.color-change.clicked {
+  background: linear-gradient(135deg, rgb(17, 6, 179), rgb(6, 203, 230));
+}
+
 #teks-blog {
   display: none;
   color: white;
@@ -80,6 +92,17 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+
+.hidden {
+  display: none;
+}
+
+#hiddenText {
+  color: rgb(255, 255, 255);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.7em;
 }
 
 .musik {
@@ -94,7 +117,7 @@ body {
 }
 
 .musik:hover {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 0, 149);
 }
 
 .musik.stop {
@@ -119,6 +142,10 @@ body {
     width: 29%;
     height: auto;
     image-rendering: smooth;
+  }
+
+  #hiddenText {
+    font-size: calc(0.5vw + 1.1rem);
   }
 
   .musik {
@@ -157,8 +184,8 @@ body {
   }
 
   .profile h2 {
-    margin-top: 18px;
-    font-size: calc(0.5vw + 1.4rem);
+    margin-top: 15px;
+    font-size: calc(0.5vw + 1.3rem);
   }
 
   #teks-me {
@@ -365,7 +392,7 @@ footer {
   position: relative;
   bottom: -1rem;
   width: auto;
-  margin-top: 1em;
+  margin-top: 0.9em;
   text-align: center;
   padding: 8px;
 }

@@ -68,16 +68,42 @@
     <main class="m-auto pt-5 pb-1">
       <section class="container profile text-center">
         <img src="assets/img/prof.png" />
-        <h3>DE&nbsp;OKA</h3>
-        <h2>Haiii 🖐🏻</h2>
-        <p id="teks-me" onclick="tampilkanTeksLain()">About Me<br /></p>
+        <h3 id="clickText">DE&nbsp;OKA</h3>
+        <p id="hiddenText" class="hidden">I Made Oka Kembarisna</p>
+        <h2>Blogger</h2>
+        <p
+          id="teks-me"
+          onclick="tampilkanTeksLain()"
+          id="myElement"
+          class="color-change"
+        >
+          About Me
+        </p>
         <p id="teks-blog">
+          Haiii 🖐🏻<br />
           Selamat datang di profile De oka, yang merupakan tempat berkreasi dan
           ekspresi dari pemikiran dan imajinasi saya sendiri. Ini adalah sebuah
           web profile yang dibuat secara otodidak, di mana saya memiliki
           keinginan untuk membuat dan menciptakan sesuatu yang baru.
         </p>
       </section>
+      <script>
+        var myElement = document.getElementById("myElement");
+
+        myElement.addEventListener("click", function () {
+          myElement.classList.toggle("clicked");
+        });
+      </script>
+      <!--nameoka-->
+      <script>
+        document
+          .getElementById("clickText")
+          .addEventListener("click", function () {
+            var hiddenText = document.getElementById("hiddenText");
+            hiddenText.classList.toggle("hidden");
+          });
+      </script>
+      <!--nameoka-->
       <!-- Our Script -->
       <script src="assets/css/text.js"></script>
       <!--silde foto-->
