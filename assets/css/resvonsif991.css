@@ -189,18 +189,20 @@
     }
 
     .geser a {
-        border: 2px solid #646464;
+        border: 2px solid #202020;
         margin: 10px;
         padding: 0 7px;
         border-radius: 10px;
         color: rgb(21, 93, 247);
         text-decoration: none;
+        font-size: 24px;
     }
 
     #pergeseran>* {
         flex-wrap: nowrap;
+        padding: 10px 25px;
         text-align: center;
-        font-size: 27px;
+        font-size: 25px;
         font-family: "Poppins", sans-serif;
         align-items: center;
         justify-content: center;
