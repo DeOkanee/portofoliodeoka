@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -12,271 +13,167 @@ body {
   align-items: center;
 }
 
-.profile img {
-  width: 15%;
-  height: auto;
-  border: 2px solid white;
-  border-radius: 50%;
-  text-align: center;
-  object-fit: cover;
-  transition: box-shadow 0.3s;
-  margin-top: 7%;
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
 }
 
-.profile img:hover {
-  box-shadow: 0 0 30px 8px rgba(255, 0, 0, 0.7);
-  /* Ubah warna sesuai dengan preferensi Anda */
-  animation: shadowChange 2s infinite;
+/* konten kiri */
+.home .content1 {
+  margin-left: 10%;
+  width: 400px;
 }
 
-@keyframes shadowChange {
+.home .content1 h2 {
+  color: white;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.home .content1 h2 span {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.animasi-text {
+  position: relative;
+  height: 70px;
+  overflow: hidden;
+}
+
+.animasi-text h3 {
+  color: #1880ff;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 1px;
+}
+
+.animasi-text h3:nth-child(1) {
+  animation: text-move 10s infinite;
+}
+
+@keyframes text-move {
   0% {
-    box-shadow: 0 0 30px 8px rgba(255, 0, 0, 0.7);
+    margin-top: 0;
   }
 
   25% {
-    box-shadow: 0 0 30px 8px rgba(0, 255, 0, 0.7);
+    margin-top: -70px;
   }
 
   50% {
-    box-shadow: 0 0 30px 8px rgba(0, 0, 255, 0.7);
+    margin-top: -140px;
   }
 
   75% {
-    box-shadow: 0 0 30px 8px rgba(255, 255, 0, 0.7);
+    margin-top: -70px;
   }
 
   100% {
-    box-shadow: 0 0 30px 8px rgba(255, 0, 255, 0.7);
+    margin-top: 0;
   }
 }
 
-#teks-me {
-  cursor: pointer;
-  color: rgb(0, 0, 0);
-  font-size: 1.7rem;
-  margin-top: 4%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  background-color: #ffffff;
-  height: auto;
-  border-top-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  margin-top: 3%;
-  margin-left: 40%;
-  margin-right: 40%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+.atasbtns {
+  padding-top: 60px
 }
 
-#teks-blog {
-  display: none;
-  color: white;
-  text-align: center;
-  font-size: 1.7rem;
-  margin-top: 5px;
-  padding: 1%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-
-.hiddenoka {
-  display: none;
-}
-
-#hiddenText {
+.btns {
+  background-color: #3269ff;
   color: rgb(255, 255, 255);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.7em;
-}
-
-.musik {
-  font-size: 1rem;
-  background-color: rgb(255, 255, 255);
-  margin-top: 18%;
-  border-radius: 2em;
-  height: 35px;
-  width: 7%;
-  margin-left: 10px;
-  margin-top: 10%;
-}
-
-.musik:hover {
-  background-color: rgb(255, 0, 149);
-}
-
-.musik.stop {
-  background-color: rgb(255, 0, 0);
-  color: white;
-}
-
-@media (max-width: 991px) {
-  body {
-    background: linear-gradient(135deg, #000cbb, #096ab9, #8708b9, #7db9e8);
-    background-attachment: fixed;
-  }
-
-
-  .profile img {
-    width: 29%;
-    height: auto;
-    margin-top: 18%;
-  }
-
-  .profile img:hover {
-    width: 31%;
-    height: auto;
-    image-rendering: smooth;
-  }
-
-  #hiddenText {
-    font-size: calc(0.5vw + 1.1rem);
-  }
-
-  .musik {
-    padding-left: 5px;
-    font-size: 1rem;
-    background-color: rgb(255, 255, 255);
-    margin-top: 18%;
-    border-radius: 1rem;
-    height: 35px;
-    width: 20%;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
-}
-
-.profile h3 {
-  text-align: center;
-  margin-top: 20px;
-  color: #fff;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 2.8rem;
-  font-weight: bold;
-}
-
-.profile h2 {
-  color: #141414;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin-top: 30px;
-  text-align: center;
-}
-
-@media (max-width: 991px) {
-  .profile h3 {
-    font-size: calc(1vw + 1.4rem);
-  }
-
-  .profile h2 {
-    margin-top: 15px;
-    font-size: calc(0.5vw + 1.3rem);
-  }
-
-  #teks-me {
-    font-size: calc(0.5vw + 1rem);
-    margin-left: 35%;
-    margin-right: 35%;
-    margin-top: 7%;
-  }
-
-  #teks-blog {
-    font-size: calc(0.5vw + 1rem);
-    margin-top: 2px;
-  }
-}
-
-input {
-  text-align: center;
-  background-color: aqua;
-  margin-top: 9px;
-  border-radius: 8px;
-  height: 30px;
-  width: 60px;
-}
-
-/*Geser*/
-
-.title h2 {
-  margin-top: 15%;
-  text-align: center;
-  color: #fff;
-  font-family: cursive;
-  font-size: 30px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
-a {
   text-decoration: none;
-}
-
-#Content,
-#tkado {
-  display: none;
-}
-
-#pergeseran {
   margin-top: 10px;
-  margin-bottom: 12px;
-  opacity: 5%;
-  visibility: hidden;
-  transition: all 1s ease;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-  justify-content: flex-start;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.btns:hover {
+  background: rgb(255, 255, 255);
+  color: #3a6cf4;
+}
+
+/* konten kanan */
+.home .content2 {
+  width: 300px;
+  margin-left: 15%;
+}
+
+/* foto di halaman home */
+.home .img {
+  border: 2px solid white;
+  border-radius: 40% 10%;
+  width: 60vh;
   position: relative;
-  width: calc(100%);
-  left: 0;
-  padding: 0 20px;
-  overflow-y: hidden;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  -ms-overflow-style: none;
-  -webkit-overflow-scrolling: touch;
-}
-
-.geser a {
-  border: 2px solid #646464;
-  margin: 10px;
-  padding: 0 7px;
-  border-radius: 10px;
-  color: rgb(21, 93, 247);
-}
-
-#pergeseran>* {
   display: flex;
-  flex-wrap: nowrap;
+}
+
+/*About*/
+.About {
+  background-color: white;
+}
+
+.About h1 {
+  color: #141414;
+  font-size: 2.2em;
   text-align: center;
-  font-size: 20px;
-  font-family: "Poppins", sans-serif;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  flex-shrink: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 0;
+  padding-top: 15%;
+  padding-bottom: 5%;
+}
+
+.aboutblog {
+  position: relative;
   width: 100%;
-  min-height: 80px;
-  background: rgba(255, 255, 255, 0.842);
-  color: rgb(0, 0, 0);
-  margin: 0 20px 0 0;
-  scroll-snap-align: center;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+  padding-bottom: 20%;
 }
 
-#pergeseran>*:last-child {
-  margin-right: 0;
+
+/* konten kiri gambar */
+.aboutblog .blogimg {
+  width: 250px;
+  margin-left: 10%;
 }
 
-#pergeseran:after {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  align-self: stretch;
-  padding-left: 50px;
+.aboutblog .img {
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  width: 24vh;
+  position: relative;
+  display: flex;
 }
+
+.aboutblog .img:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  /* Menambahkan properti box-shadow */
+}
+
+/* text-blog*/
+.aboutblog .text-blog {
+  width: 880px;
+  margin-left: 20px;
+}
+
+.aboutblog p {
+  color: #141414;
+  padding: 15px 30px;
+  font-size: 1.3em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 
 /*ICON SOSIAL MEDIA*/
 /* sosial*/
@@ -284,35 +181,28 @@ a {
   text-align: center;
   position: relative;
   padding: 1px 0;
-  margin-top: 4%;
-  margin-bottom: 4%;
+  margin-top: 22%;
+  margin-bottom: 22%;
 }
 
 .fh5co-social .site-container {
   text-align: center;
 }
 
-@media (max-width: 991px) {
-  .fh5co-social {
-    text-align: center;
-    margin-top: 10%;
-  }
-
-  .social {
-    flex-direction: column;
-  }
-
-  .social-icons {
-    margin-top: 2%;
-  }
-}
 
 .social {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.social h2 {
+  color: white;
+  font-size: 2.1em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .social-icons {
@@ -324,8 +214,9 @@ a {
 .social-icons a {
   text-align: center;
   position: relative;
-  margin: 5px;
+  margin: 10px;
   transition: 0.3s ease;
+  text-decoration: none;
 }
 
 .social-icons i {
@@ -374,14 +265,111 @@ a {
   border-radius: 50%;
 }
 
+/*Geser*/
+.game {
+  margin-top: 20%;
+  background-color: #1f1f1f;
+  margin-bottom: -3%;
+}
+
+.title h2 {
+  padding-top: 18%;
+  margin-bottom: 5%;
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#pergeseran {
+  margin-top: 10px;
+  margin-bottom: 18%;
+  opacity: 1;
+  visibility: visible;
+  transition: all 1s ease;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  left: 0;
+  padding: 0 50px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.geser a {
+  border: 2px solid #646464;
+  margin: 10px;
+  padding: 0 7px;
+  border-radius: 10px;
+  color: rgb(21, 93, 247);
+  text-decoration: none;
+  /* Menambahkan properti text-decoration */
+}
+
+#pergeseran>* {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  flex-shrink: 0;
+  width: 100%;
+  min-height: 80px;
+  background: rgba(255, 255, 255, 0.842);
+  color: rgb(0, 0, 0);
+  margin: 0 55px 0 0;
+  scroll-snap-align: center;
+}
+
+#pergeseran>*:last-child {
+  margin-right: 0;
+}
+
+#pergeseran::after {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  align-self: stretch;
+  padding-left: 50px;
+}
+
+
+/*MUSIK*/
+.musik {
+  right: 0px;
+  font-size: 17px;
+  background-color: rgb(255, 255, 255);
+  height: 35px;
+  width: 7%;
+  margin-left: 10px;
+
+}
+
+.musik:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.musik.stop {
+  background-color: rgb(214, 0, 0);
+  color: white;
+}
+
 /* copright */
 footer {
-  background-color: #292929;
   position: relative;
+  background-color: #292929;
   bottom: -1rem;
   width: auto;
-  margin-top: 0.9em;
-  text-align: center;
   padding: 8px;
 }
 
