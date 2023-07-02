@@ -191,14 +191,15 @@
         -webkit-overflow-scrolling: touch;
     }
 
-    .geser a {
-        border: 2px solid #202020;
-        margin: 10px;
-        padding: 0 7px;
-        border-radius: 10px;
-        color: rgb(21, 93, 247);
-        text-decoration: none;
-        font-size: 24px;
+    .geser p {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .geser p a {
+        margin-left: 10px;
     }
 
     #pergeseran>* {
@@ -217,6 +218,7 @@
         margin: 0 50px 0 0;
         scroll-snap-align: center;
     }
+
 
     /*MUSIK*/
     .musik {
