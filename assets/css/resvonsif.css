@@ -1,37 +1,65 @@
 /* Ukuran responsif untuk perangkat mobile */
 @media (max-width: 991px) {
     body {
-        font-weight: 300 !important;
         background-image: url("../img/919.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        align-items: center;
     }
 
     /*HOME*/
     .home {
         flex-direction: column-reverse;
-        min-height: auto;
         padding-top: 30%;
+        background-color: #202020;
         padding-bottom: 25%;
     }
 
     .home .content1 {
-        padding: 10% 25%;
+        padding: 10% 20%;
+        background-color: aqua;
     }
 
     .home .content1 h2 {
-
         font-size: 1.4em;
+        font-weight: 300;
     }
 
     .home .content1 h2 span {
         font-size: 1.3em;
+        font-weight: 300;
+    }
+
+    .animasi-text {
+        height: 70px;
     }
 
     .animasi-text h3 {
         font-size: 1.3em;
+
+    }
+
+    .animasi-text h3:nth-child(1) {
+        animation: text-move 10s infinite;
+    }
+
+    @keyframes text-move {
+        0% {
+            margin-top: 0;
+        }
+
+        25% {
+            margin-top: -70px;
+        }
+
+        50% {
+            margin-top: -140px;
+        }
+
+        75% {
+            margin-top: -70px;
+        }
+
+        100% {
+            margin-top: 0;
+        }
     }
 
     .atasbtns {
@@ -46,8 +74,8 @@
 
     /* konten kanan */
     .home .content2 {
-        width: auto;
-        margin-right: 15%;
+        margin-right: 0;
+        background-color: beige;
     }
 
     /* foto di halaman home */
@@ -90,6 +118,7 @@
     /*ICON SOSIAL MEDIA*/
     /* sosial*/
     .fh5co-social {
+        background-color: aqua;
         text-align: center;
         padding: 1px 0;
         margin-top: 70%;
@@ -124,7 +153,7 @@
 
     /*game*/
     .game {
-        margin-bottom: -25%;
+        margin-bottom: -10%;
         padding-top: 10%;
         padding-bottom: 30%;
     }
