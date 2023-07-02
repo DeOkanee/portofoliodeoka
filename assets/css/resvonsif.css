@@ -6,15 +6,16 @@
 
     /*HOME*/
     .home {
+        width: 400px;
         flex-direction: column-reverse;
-        padding-top: 30%;
-        background-color: #202020;
+        padding-top: 20%;
         padding-bottom: 25%;
+        margin-left: 5%;
+        margin-right: auto;
     }
 
     .home .content1 {
         padding: 10% 20%;
-        background-color: aqua;
     }
 
     .home .content1 h2 {
@@ -74,8 +75,8 @@
 
     /* konten kanan */
     .home .content2 {
-        margin-right: 0;
-        background-color: beige;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /* foto di halaman home */
@@ -84,41 +85,32 @@
     }
 
     /*HOME*/
-    /*ABOUT*/
-    .About h1 {
-        padding-top: 15%;
-        padding-bottom: 10%;
-        font-size: 2em;
-    }
+    /* Responsif untuk perangkat dengan lebar maksimum 991px */
+    @media (max-width: 991px) {
+        .aboutblog {
+            flex-direction: column;
+            padding-bottom: 5%;
+        }
 
-    .aboutblog {
-        flex-direction: column;
-        padding-bottom: 15%;
-    }
+        .aboutblog .blogimg {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+        }
 
-    .aboutblog .blogimg {
-        width: 50%;
-    }
 
-    .aboutblog .img {
-        width: 19vh;
-    }
-
-    /* text-blog*/
-    .aboutblog .text-blog {
-        width: 105%;
-        text-align: center;
-        margin-right: 15px;
-    }
-
-    .aboutblog p {
-        font-size: 1.4em;
+        .aboutblog .text-blog {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
     }
 
     /*ICON SOSIAL MEDIA*/
     /* sosial*/
     .fh5co-social {
-        background-color: aqua;
         text-align: center;
         padding: 1px 0;
         margin-top: 70%;
