@@ -6,7 +6,7 @@
 
     /*HOME*/
     .home {
-        background-color: #292929;
+        margin-top: -10%;
         width: 100%;
         /* Mengisi seluruh lebar layar */
         flex-direction: column-reverse;
@@ -82,12 +82,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         margin-left: auto;
         margin-right: auto;
         width: 90%;
         /* Mengisi 90% lebar parent */
     }
+
 
 
     /* foto di halaman home */
