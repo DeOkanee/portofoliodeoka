@@ -1,6 +1,6 @@
-@media (max-width: 767px) {
+@media screen and (max-width: 480px) {
     body {
-        font-weight: 300 !important;
+        font-weight: 300;
         background-image: url("../img/919.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -9,18 +9,19 @@
     }
 
     .home {
-        min-height: 70vh;
+        min-height: 50vh;
         flex-direction: column-reverse;
         margin-bottom: 20%;
     }
 
     .home .content1 {
         margin-top: 25px;
-        width: 310px;
+        width: 85%;
+        max-width: 310px;
     }
 
     .home .content1 h2 {
-        font-size: 1.5em;
+        font-size: 1.3em;
         font-weight: 300;
     }
 
@@ -34,7 +35,7 @@
     }
 
     .animasi-text h3 {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 
     .animasi-text h3:nth-child(1) {
@@ -76,12 +77,13 @@
 
     /* konten kanan */
     .home .content2 {
-        width: 210px;
+        width: 80%;
+        max-width: 220px;
     }
 
     /* foto di halaman home */
     .home .img {
-        width: 40vh;
+        width: 35vh;
         border-radius: 50%;
     }
 
@@ -95,8 +97,9 @@
     }
 
     .aboutblog .blogimg {
-        width: 340px;
-        margin-top: 20px;
+        width: 80%;
+        max-width: 40%;
+        margin-top: 15px;
     }
 
     .aboutblog .img {
@@ -105,7 +108,8 @@
 
     /* text-blog*/
     .aboutblog .text-blog {
-        width: 350px;
+        width: 100%;
+        max-width: 380px;
         text-align: center;
         margin-left: 0;
     }
@@ -119,8 +123,8 @@
     .fh5co-social {
         text-align: center;
         padding: 1px 0;
-        margin-top: 20%;
-        margin-bottom: 20%;
+        margin-top: 60%;
+        margin-bottom: 60%;
     }
 
     .fh5co-social .site-container {
@@ -132,7 +136,7 @@
     }
 
     .social h2 {
-        font-size: 1.5em;
+        font-size: 1.7em;
         margin-bottom: 10%;
     }
 
@@ -141,22 +145,24 @@
     }
 
     .social-icons a {
-        margin: 2px;
+        margin: 3px;
     }
 
     .social-icons i {
         border-radius: 50%;
-        padding: 8px 9px;
+        padding: 10px 10px;
     }
 
     /*game*/
     .game {
-        margin-top: 10%;
+        margin-top: 40%;
+        height: auto;
+        margin-bottom: -10%;
     }
 
     .title h2 {
-        padding: 15px;
-        margin-bottom: 10px;
+        padding-top: 40%;
+        padding-bottom: 10%;
         text-align: center;
         color: #fff;
         font-size: 1.9em;
@@ -164,7 +170,7 @@
 
     #pergeseran {
         margin-top: 7px;
-        margin-bottom: 9px;
+        margin-bottom: 50%;
         opacity: 1;
         visibility: visible;
         transition: all 1s ease;
@@ -174,10 +180,10 @@
         justify-content: flex-start;
         position: relative;
         width: 100%;
-        left: 0;
-        padding: 0 50px;
+        left: 10%;
+        padding: 0 5%;
         overflow-y: hidden;
-        overflow-x: scroll;
+        overflow-x: auto;
         scroll-behavior: smooth;
         scroll-snap-type: x mandatory;
         -ms-overflow-style: none;
@@ -197,28 +203,27 @@
     #pergeseran>* {
         flex-wrap: nowrap;
         text-align: center;
-        font-size: 20px;
+        font-size: 0.9em;
         font-family: "Poppins", sans-serif;
         align-items: center;
         justify-content: center;
         border-radius: 10px;
         flex-shrink: 0;
-        width: 100%;
+        width: 80%;
         min-height: 80px;
-        margin: 0 50px 0 0;
+        margin: 0 10% 0 0;
         scroll-snap-align: center;
     }
 
     /*MUSIK*/
     .musik {
-        font-size: 15px;
+        font-size: 1.5vw;
         height: 28px;
         width: 23%;
     }
 
     /* copright */
     footer {
-        margin-top: 20%;
         position: relative;
         background-color: #292929;
         bottom: -1rem;
@@ -231,5 +236,4 @@
         color: #fff;
         font-size: 15px;
     }
-
 }
