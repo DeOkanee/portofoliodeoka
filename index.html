@@ -4,13 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta name="theme-color" content="#4f6b88" />
-    <meta name="msapplication-navbutton-color" content="#4f6b88" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#4f6b88" />
-
-    <link rel="shortcut icon" href="assets/img/prof.png" />
+    <link rel="shortcut icon" href="/assets/img/prof.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
       rel="stylesheet"
@@ -18,8 +12,7 @@
     <!-- Bootstrap CSS -->
     <link href="/assets/css/style.css" rel="stylesheet" />
     <!--resvonsivf-->
-    <link href="/assets/css/resvonsif480.css" rel="stylesheet" />
-    <link href="/assets/css/resvonsif767.css" rel="stylesheet" />
+    <link href="/assets/css/resvonsif.css" rel="stylesheet" />
     <!--resvonsif-->
     <link
       rel="stylesheet"
@@ -69,200 +62,195 @@
   </head>
 
   <body>
-    <main>
-      <section id="home" class="home">
-        <div class="content1">
-          <h2>Haloo haiii, saya <br /></h2>
-          <div class="animasi-text">
-            <h3>De Oka</h3>
-            <h3>I Made Oka Kembarisna</h3>
-            <h3>Blogger</h3>
-          </div>
-          <div class="atasbtns">
-            <a class="btns" href="#about">About</a>
-            <a class="btns" href="#Sosial Media">Sosial Media</a>
-            <a class="btns" href="#Game">Game</a>
-          </div>
+    <!-- Top banner end -->
+    <section id="home" class="home">
+      <div class="content1">
+        <h2>Haloo haiii, saya <br /></h2>
+        <div class="animasi-text">
+          <h3>De Oka</h3>
+          <h3>I Made Oka Kembarisna</h3>
+          <h3>Blogger</h3>
         </div>
-        <div class="content2">
-          <img src="/assets/img/okaprofff.jpg" class="img" />
+        <div class="atasbtns">
+          <a class="btns" href="#about">About</a>
+          <a class="btns" href="#Sosial Media">Sosial Media</a>
+          <a class="btns" href="#Game">Game</a>
         </div>
-      </section>
-      <!-- akhir  home -->
-      <!--about-->
-      <div id="about"></div>
-      <section class="About">
-        <h1>About</h1>
-        <div class="aboutblog">
-          <div class="blogimg">
-            <img src="/assets/img/prof.png" class="img" />
-          </div>
-          <p class="text-blog">
-            Haiii 🖐🏻<br />
-            Selamat datang di profile De oka, yang merupakan tempat berkreasi
-            dan ekspresi dari pemikiran dan imajinasi saya sendiri. Ini adalah
-            sebuah web profile yang dibuat secara otodidak, di mana saya
-            memiliki keinginan untuk membuat dan menciptakan sesuatu yang baru.
-          </p>
+      </div>
+      <div class="content2">
+        <img src="/assets/img/okaprofff.jpg" class="img" />
+      </div>
+    </section>
+    <!-- akhir  home -->
+    <!--about-->
+    <div id="about"></div>
+    <section class="About">
+      <h1>About</h1>
+      <div class="aboutblog">
+        <div class="blogimg">
+          <img src="/assets/img/prof.png" class="img" />
         </div>
-      </section>
-      <!-- sosial -->
-      <div id="Sosial Media"></div>
-      <section class="fh5co-social" id="Sosial Media">
-        <div class="site-container">
-          <div class="social">
-            <h2>Sosial Media</h2>
-            <div class="social-icons">
-              <a
-                class="sosial"
-                href="https://www.facebook.com/oka.kembarisna.9"
-              >
-                <i id="facebook" class="fab fa-facebook fa-2x"></i>
-              </a>
-              <a class="sosial" href="https://wa.me/6285738187967">
-                <i id="whatsapp" class="fab fa-whatsapp fa-2x"></i>
-              </a>
-              <a
-                class="sosial"
-                href="https://instagram.com/de_0ka?igshid=NTc4MTIwNjQ2YQ=="
-              >
-                <i id="instagram" class="fab fa-instagram fa-2x"></i>
-              </a>
-              <a class="sosial" href="https://vm.tiktok.com/ZSLR4EKHE/">
-                <i id="tiktok" class="fab fa-tiktok fa-2x"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <script src="/assets/css/scrol.js"></script>
-
-      <!-- sosial -->
-      <!-- JQuery -->
-      <script
-        type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-      ></script>
-
-      <!-- Slick JS -->
-      <script
-        type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-      ></script>
-
-      <!-- Our Script -->
-      <script src="assets/slide CSS JS/javascript.js"></script>
-      <!--silde foto-->
-
-      <script>
-        const swals = Swal.mixin({
-          cancelButtonColor: "#DC143C",
-          confirmButtonColor: "#00008B",
-          allowOutsideClick: false,
-        });
-        const swap = iloveu.mixin({
-          cancelButtonColor: "#909090",
-          confirmButtonColor: "#2B2B2B",
-          allowOutsideClick: true,
-        });
-      </script>
-      <!--Audio-->
-      <!--Muncul awal-->
-      <script>
-        async function start() {
-          await swals.fire("Halo ツ");
-          setTimeout(mulai, 900);
-          play();
-        }
-        start();
-
-        function showDiv() {
-          document.getElementById("fotogoy").style.animation =
-            "fotogoy 2s ease infinite";
-          document.getElementById("Content").style.opacity = "5";
-        }
-
-        function mulai() {
-          ketiknm();
-          showDiv();
-        }
-
-        function ketiknm() {
-          document.getElementById("pergeseran").style.opacity = "1";
-          document.getElementById("pergeseran").style.visibility = "visible";
-          document.getElementById("pergeseran").tyle.margin = "10px 0";
-        }
-      </script>
-
-      <!--Muncul awal-->
-      <!--slider-->
-      <section class="game" id="Game">
-        <div class="contentgeser">
-          <div class="title">
-            <h2>Game</h2>
-          </div>
-          <div class="geser" id="pergeseran">
-            <p><i>Geser &nbsp;</i>&#128073;</p>
-            <p>
-              Gunting Batu Kertas &#128073;
-              <a href="game/GBK/index.html">GAS</a>
-            </p>
-            <p>
-              Tic Tac Toe &#128073;
-              <a href="/game/tic tac teo/index.html">GAS</a>
-            </p>
-            <p>
-              Permainan Kartu &#128073;
-              <a href="game/permainan kartu/index.html">GAS</a>
-            </p>
-            <p>
-              Game lainnya &#128073;
-              <a href="https://www.addictinggames.com/">GAS</a>
-            </p>
-          </div>
-          <p>LAGI PROSES</p>
-        </div>
-      </section>
-
-      <footer>
-        <!--audio berjalan di latar belakang-->
-        <section class="Musiklatar">
-          <audio
-            id="backgroundAudio"
-            src="https://k.top4top.io/m_27079rsl61.mp3"
-            autoplay
-            loop
-          ></audio>
-        </section>
-
-        <div class="bawah">
-          <p align="center">
-            © De Oka | 2022 |
-            <button
-              id="toggleButton"
-              class="musik"
-              onclick="toggleBackgroundAudio()"
+        <p class="text-blog">
+          Haiii 🖐🏻<br />
+          Selamat datang di profile De oka, yang merupakan tempat berkreasi dan
+          ekspresi dari pemikiran dan imajinasi saya sendiri. Ini adalah sebuah
+          web profile yang dibuat secara otodidak, di mana saya memiliki
+          keinginan untuk membuat dan menciptakan sesuatu yang baru.
+        </p>
+      </div>
+    </section>
+    <!-- sosial -->
+    <div id="Sosial Media"></div>
+    <section class="fh5co-social" id="Sosial Media">
+      <div class="site-container">
+        <div class="social">
+          <h2>Sosial Media</h2>
+          <div class="social-icons">
+            <a class="sosial" href="https://www.facebook.com/oka.kembarisna.9">
+              <i id="facebook" class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a class="sosial" href="https://wa.me/6285738187967">
+              <i id="whatsapp" class="fab fa-whatsapp fa-2x"></i>
+            </a>
+            <a
+              class="sosial"
+              href="https://instagram.com/de_0ka?igshid=NTc4MTIwNjQ2YQ=="
             >
-              Stop 🎵
-            </button>
+              <i id="instagram" class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a class="sosial" href="https://vm.tiktok.com/ZSLR4EKHE/">
+              <i id="tiktok" class="fab fa-tiktok fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/assets/css/scrol.js"></script>
+    <!--img berkedip-->
+    <!-- sosial -->
+    <!-- JQuery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <!-- Our Script -->
+    <script src="assets/slide CSS JS/javascript.js"></script>
+    <!--silde foto-->
+
+    <script>
+      const swals = Swal.mixin({
+        cancelButtonColor: "#DC143C",
+        confirmButtonColor: "#00008B",
+        allowOutsideClick: false,
+      });
+      const swap = iloveu.mixin({
+        cancelButtonColor: "#909090",
+        confirmButtonColor: "#2B2B2B",
+        allowOutsideClick: true,
+      });
+    </script>
+    <!--Audio-->
+    <!--Muncul awal-->
+    <script>
+      async function start() {
+        await swals.fire("Halo ツ");
+        setTimeout(mulai, 900);
+        play();
+      }
+      start();
+
+      function showDiv() {
+        document.getElementById("fotogoy").style.animation =
+          "fotogoy 2s ease infinite";
+        document.getElementById("Content").style.opacity = "5";
+      }
+
+      function mulai() {
+        ketiknm();
+        showDiv();
+      }
+
+      function ketiknm() {
+        document.getElementById("pergeseran").style.opacity = "1";
+        document.getElementById("pergeseran").style.visibility = "visible";
+        document.getElementById("pergeseran").tyle.margin = "10px 0";
+      }
+    </script>
+
+    <!--Muncul awal-->
+    <!--slider-->
+    <section class="game" id="Game">
+      <div class="contentgeser">
+        <div class="title">
+          <h2>Game</h2>
+        </div>
+        <div class="geser" id="pergeseran">
+          <p><i>Geser &nbsp;</i>&#128073;</p>
+          <p>
+            Gunting Batu Kertas &#128073;
+            <a href="game/GBK/index.html">GAS</a>
+          </p>
+          <p>
+            Tic Tac Toe &#128073;
+            <a href="/game/tic tac teo/index.html">GAS</a>
+          </p>
+          <p>
+            Permainan Kartu &#128073;
+            <a href="game/permainan kartu/index.html">GAS</a>
+          </p>
+          <p>
+            Game lainnya &#128073;
+            <a href="https://www.addictinggames.com/">GAS</a>
           </p>
         </div>
-        <!--SCRIPT AUDIO-->
-        <script>
-          var backgroundAudio = document.getElementById("backgroundAudio");
-          var toggleButton = document.getElementById("toggleButton");
+      </div>
+    </section>
 
-          function toggleBackgroundAudio() {
-            if (backgroundAudio.paused) {
-              backgroundAudio.play();
-              toggleButton.classList.remove("stop");
-            } else {
-              backgroundAudio.pause();
-              toggleButton.classList.add("stop");
-            }
+    <footer>
+      <!--audio berjalan di latar belakang-->
+      <section class="Musiklatar">
+        <audio
+          id="backgroundAudio"
+          src="https://k.top4top.io/m_27079rsl61.mp3"
+          autoplay
+          loop
+        ></audio>
+      </section>
+
+      <div class="bawah">
+        <p align="center">
+          © De Oka | 2022 |
+          <button
+            id="toggleButton"
+            class="musik"
+            onclick="toggleBackgroundAudio()"
+          >
+            Stop 🎵
+          </button>
+        </p>
+      </div>
+      <!--SCRIPT AUDIO-->
+      <script>
+        var backgroundAudio = document.getElementById("backgroundAudio");
+        var toggleButton = document.getElementById("toggleButton");
+
+        function toggleBackgroundAudio() {
+          if (backgroundAudio.paused) {
+            backgroundAudio.play();
+            toggleButton.classList.remove("stop");
+          } else {
+            backgroundAudio.pause();
+            toggleButton.classList.add("stop");
           }
-        </script>
-      </footer>
-    </main>
+        }
+      </script>
+    </footer>
   </body>
 </html>

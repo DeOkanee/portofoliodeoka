@@ -1,4 +1,4 @@
-@media only screen and (max-width: 767px) {
+@media (max-width: 991px) {
     body {
         font-weight: 300 !important;
         background-image: url("../img/919.jpg");
@@ -9,7 +9,7 @@
     }
 
     .home {
-        min-height: 90vh;
+        min-height: 40vh;
         flex-direction: column-reverse;
         margin-bottom: 60%;
     }
@@ -76,7 +76,7 @@
 
     /* konten kanan */
     .home .content2 {
-        width: 60%;
+        width: 90%;
     }
 
     /* foto di halaman home */
