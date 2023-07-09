@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styling.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
 
     <!-- Bootstrap CSS -->
     <link href="assets/css/styling.css" rel="stylesheet">
@@ -107,24 +111,18 @@
                 result.textContent = start.matchResult(); 
             }, 1500);
         }
-         
-         function play() {
-            var audio = new 
-            Audio('https://a.top4top.io/m_2351bddrx1.mp3');audio. play();} 
-            const swals = Swal.mixin({cancelButtonColor: '#909090', confirmButtonColor: '#2B2B2B', allowOutsideClick: true,}); 
-         
+        $(document).ready(function () {
+        toastr.options = {
+          closeButton: true,
+          positionClass: "toast-top-right",
+          timeOut: "3000",
+        };
+
+        toastr.info("Game ini dimainkan oleh 2 orang!");
+      });
     </script>
-    <body>
-        <style>
-          div.a {
-            text-align: center;
-          }
-        </style>
-        <div class="a"
-         font face="Courier New"> © Deokanee 
-        </div>
-    
-    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     </body>
 
 </html>
