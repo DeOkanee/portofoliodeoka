@@ -155,14 +155,15 @@
         allowOutsideClick: false,
       });
 
+      let scriptExecuted = false;
+
       async function start() {
-        const titleStyle = `
-      font-size: 18px; /* Ukuran font yang diinginkan */
-      /* Tambahkan properti gaya lainnya di sini */
-    `;
+        if (scriptExecuted) {
+          return; // Skrip sudah dijalankan sebelumnya, keluar dari fungsi start
+        }
 
         const { value: username, dismiss: dismissReason } = await Swal.fire({
-          title: `<span style="${titleStyle}">Masukan nama kamu</span>`,
+          title: "Masukan nama kamu",
           input: "text",
           showCancelButton: true,
           cancelButtonText: "Cancel",
@@ -188,6 +189,8 @@
             "Haloo " + username + ", saya";
           setTimeout(mulai, 900);
         }
+
+        scriptExecuted = true; // Set variabel scriptExecuted menjadi true setelah skrip dijalankan
       }
 
       function play() {
