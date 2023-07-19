@@ -155,14 +155,14 @@
         allowOutsideClick: false,
       });
 
-      let isDialogShown = false; // Variabel untuk melacak apakah dialog Swal sudah ditampilkan
+      let isUsernameSubmitted = false; // Flag untuk melacak status masukan nama pengguna
 
       async function start() {
-        if (isDialogShown) {
-          return; // Jika dialog sudah ditampilkan, keluar dari fungsi
+        if (isUsernameSubmitted) {
+          // Jika nama pengguna sudah dimasukkan sebelumnya, langsung lanjutkan ke langkah berikutnya
+          setTimeout(mulai, 900);
+          return;
         }
-
-        isDialogShown = true; // Setel isDialogShown ke true setelah dialog ditampilkan
 
         const { value: username, dismiss: dismissReason } = await Swal.fire({
           title: "Masukkan nama kamu",
@@ -188,7 +188,8 @@
 
         if (username) {
           document.getElementById("greeting").innerText =
-            "Haloo " + username + ", saya";
+            "Halo " + username + ", saya";
+          isUsernameSubmitted = true; // Mengatur flag isUsernameSubmitted menjadi true
           setTimeout(mulai, 900);
         }
       }
