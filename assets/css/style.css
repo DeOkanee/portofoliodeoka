@@ -31,7 +31,7 @@ body {
 }
 
 .home .content1 h2 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 2em;
   font-weight: 500;
 }
@@ -82,7 +82,7 @@ body {
 }
 
 .atasbtns {
-  padding-top: 60px
+  padding-top: 60px;
 }
 
 .btns {
@@ -124,7 +124,7 @@ body {
   color: #141414;
   font-size: 2.2em;
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-top: 0;
   padding-top: 15%;
   padding-bottom: 5%;
@@ -140,7 +140,6 @@ body {
   align-items: center;
   padding-bottom: 20%;
 }
-
 
 /* konten kiri gambar */
 .aboutblog .blogimg {
@@ -171,9 +170,8 @@ body {
   color: #141414;
   padding: 15px 30px;
   font-size: 1.3em;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
 
 /*ICON SOSIAL MEDIA*/
 /* sosial*/
@@ -189,7 +187,6 @@ body {
   text-align: center;
 }
 
-
 .social {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
@@ -202,7 +199,7 @@ body {
 .social h2 {
   color: white;
   font-size: 2.1em;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .social-icons {
@@ -278,7 +275,7 @@ body {
   text-align: center;
   color: #fff;
   font-size: 2em;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 #pergeseran {
@@ -311,7 +308,7 @@ body {
   /* Menambahkan properti text-decoration */
 }
 
-#pergeseran>* {
+#pergeseran > * {
   display: flex;
   flex-wrap: nowrap;
   text-align: center;
@@ -329,7 +326,7 @@ body {
   scroll-snap-align: center;
 }
 
-#pergeseran>*:last-child {
+#pergeseran > *:last-child {
   margin-right: 0;
 }
 
@@ -341,7 +338,6 @@ body {
   padding-left: 50px;
 }
 
-
 /*MUSIK*/
 .musik {
   right: 0px;
@@ -350,7 +346,6 @@ body {
   height: 35px;
   width: 7%;
   margin-left: 10px;
-
 }
 
 .musik:hover {

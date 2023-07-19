@@ -149,6 +149,12 @@
     <!--silde foto-->
 
     <script>
+      const swals = Swal.mixin({
+        cancelButtonColor: "#0004ff",
+        confirmButtonColor: "#0004ff",
+        allowOutsideClick: false,
+      });
+
       async function start() {
         const { value: username, dismiss: dismissReason } = await Swal.fire({
           title: "Submit your name",
@@ -166,8 +172,8 @@
         if (dismissReason === Swal.DismissReason.cancel) {
           Swal.fire({
             icon: "info",
-            title: "Jangan di Cancel",
-            text: "Tolong masukkan nama kamu:)",
+            title: "Input dibatalkan",
+            text: "Tolong masukkan nama kamu!",
           }).then(start);
           return;
         }
