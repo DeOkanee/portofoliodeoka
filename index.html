@@ -156,8 +156,13 @@
       });
 
       async function start() {
+        const titleStyle = `
+      font-size: 18px; /* Ukuran font yang diinginkan */
+      /* Tambahkan properti gaya lainnya di sini */
+    `;
+
         const { value: username, dismiss: dismissReason } = await Swal.fire({
-          title: "Submit your name",
+          title: `<span style="${titleStyle}">Masukan nama kamu</span>`,
           input: "text",
           showCancelButton: true,
           confirmButtonText: "Submit",
