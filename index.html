@@ -69,7 +69,7 @@
     <!-- Top banner end -->
     <section id="home" class="home">
       <div class="content1">
-        <h2>Haloo haiii, saya <br /></h2>
+        <h2 id="greeting">Haloo hai, saya <br /></h2>
         <div class="animasi-text">
           <h3>De Oka</h3>
           <h3>I Made Oka Kembarisna</h3>
@@ -149,26 +149,39 @@
     <!--silde foto-->
 
     <script>
-      const swals = Swal.mixin({
-        cancelButtonColor: "#DC143C",
-        confirmButtonColor: "#00008B",
-        allowOutsideClick: false,
-      });
-      const swap = iloveu.mixin({
-        cancelButtonColor: "#909090",
-        confirmButtonColor: "#2B2B2B",
-        allowOutsideClick: true,
-      });
-    </script>
-    <!--Audio-->
-    <!--Muncul awal-->
-    <script>
       async function start() {
-        await swals.fire("Halo ツ");
-        setTimeout(mulai, 900);
-        play();
+        const { value: username, dismiss: dismissReason } = await Swal.fire({
+          title: "Submit your name",
+          input: "text",
+          showCancelButton: true,
+          confirmButtonText: "Submit",
+          cancelButtonText: "Cancel",
+          inputValidator: (value) => {
+            if (!value) {
+              return "Tolong masukkan nama kamu:)";
+            }
+          },
+        });
+
+        if (dismissReason === Swal.DismissReason.cancel) {
+          Swal.fire({
+            icon: "info",
+            title: "Jangan di Cancel",
+            text: "Tolong masukkan nama kamu:)",
+          }).then(start);
+          return;
+        }
+
+        if (username) {
+          document.getElementById("greeting").innerText =
+            "Haloo " + username + ", saya";
+          setTimeout(mulai, 900);
+        }
       }
-      start();
+
+      function play() {
+        // Tambahkan logika pemutaran di sini
+      }
 
       function showDiv() {
         document.getElementById("fotogoy").style.animation =
@@ -179,13 +192,16 @@
       function mulai() {
         ketiknm();
         showDiv();
+        play();
       }
 
       function ketiknm() {
         document.getElementById("pergeseran").style.opacity = "1";
         document.getElementById("pergeseran").style.visibility = "visible";
-        document.getElementById("pergeseran").tyle.margin = "10px 0";
+        document.getElementById("pergeseran").style.margin = "10px 0";
       }
+
+      start();
     </script>
 
     <!--Muncul awal-->
