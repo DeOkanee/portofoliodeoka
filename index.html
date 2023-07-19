@@ -155,15 +155,17 @@
         allowOutsideClick: false,
       });
 
-      let scriptExecuted = false;
+      let isDialogShown = false; // Variabel untuk melacak apakah dialog Swal sudah ditampilkan
 
       async function start() {
-        if (scriptExecuted) {
-          return; // Skrip sudah dijalankan sebelumnya, keluar dari fungsi start
+        if (isDialogShown) {
+          return; // Jika dialog sudah ditampilkan, keluar dari fungsi
         }
 
+        isDialogShown = true; // Setel isDialogShown ke true setelah dialog ditampilkan
+
         const { value: username, dismiss: dismissReason } = await Swal.fire({
-          title: "Masukan nama kamu",
+          title: "Masukkan nama kamu",
           input: "text",
           showCancelButton: true,
           cancelButtonText: "Cancel",
@@ -189,8 +191,6 @@
             "Haloo " + username + ", saya";
           setTimeout(mulai, 900);
         }
-
-        scriptExecuted = true; // Set variabel scriptExecuted menjadi true setelah skrip dijalankan
       }
 
       function play() {
