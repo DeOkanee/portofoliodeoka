@@ -114,6 +114,9 @@ body {
   position: relative;
   display: flex;
 }
+.home .img:hover {
+  box-shadow: 0 0 30px rgb(255, 255, 255);
+}
 
 /*About*/
 .About {
